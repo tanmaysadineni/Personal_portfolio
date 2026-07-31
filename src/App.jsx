@@ -120,6 +120,37 @@ const Portfolio = () => {
         "30% speedup in AI query response times",
         "95%+ user satisfaction in rigorous DRDO validation testing"
       ]
+    },
+    {
+      title: "Machine Learning Intern",
+      company: "Rashtriya Ispat Nigam Limited (RINL)",
+      period: "May 2024 – June 2024",
+      location: "Visakhapatnam, India",
+      type: "Manufacturing Analytics",
+      description: "Applied machine learning and predictive analytics to optimize blast furnace operations at India's largest steel manufacturing plant.",
+      keyResponsibilities: [
+        {
+          title: "Predictive Production Forecasting",
+          details: "Developed time-series forecasting models predicting blast furnace production and sales metrics using 50,000+ historical records spanning 2+ years. Achieved 5% improvement over baseline methods.",
+          impact: "5% forecast accuracy improvement on 50,000+ historical production records"
+        },
+        {
+          title: "Operational Efficiency & Bottleneck Analysis",
+          details: "Conducted deep-dive analysis of production trends, capacity utilization rates, and operational parameters using SQL and Python (Pandas, NumPy), identifying a 10% efficiency gap.",
+          impact: "Identified 10% efficiency gap with actionable KPI recommendations"
+        },
+        {
+          title: "Data Pipeline Automation",
+          details: "Built an end-to-end automated ETL pipeline transforming raw sensor data into structured analysis datasets, cutting daily manual data preparation time from 4 hours to 30 minutes.",
+          impact: "Automated daily ETL pipeline saving 3.5 hours of manual work every day"
+        }
+      ],
+      technologies: ["Python", "Scikit-learn", "SQL", "Pandas", "NumPy", "Time-Series Analysis", "ETL Pipelines"],
+      achievements: [
+        "Improved production forecast accuracy by 5% on 50,000+ historical records",
+        "Identified 10% efficiency gap with actionable operational recommendations",
+        "Automated daily sensor data pipeline saving 3.5 hours daily"
+      ]
     }
   ];
 
@@ -307,6 +338,53 @@ const Portfolio = () => {
       ],
       
       technologies: ["Python", "Speech-to-Text", "LLMs", "Text-to-Speech", "NLP", "Translation APIs"],
+      github: "https://github.com/tanmaysadineni/portfolio",
+      demo: "Available upon request"
+    },
+    {
+      id: 4,
+      title: "Credit Card Fraud Detection System",
+      tagline: "Financial Security • Imbalanced ML • REST API Deployment",
+      duration: "Personal ML Project",
+      status: "Production Deployment",
+      
+      overview: "Engineered a machine learning system detecting fraudulent credit card transactions in real-time. Addressed extreme class imbalance (fraud <0.2%) using SMOTE oversampling while maintaining 94% precision to minimize customer friction.",
+      
+      problemStatement: {
+        challenge: "Financial fraud causes massive global losses, but rule-based systems generate high false positives. ML models must handle extreme class imbalance without blocking legitimate transactions.",
+        goal: "Build a real-time fraud detection pipeline achieving >90% precision and recall with sub-100ms inference latency.",
+        constraints: ["Handle 0.17% class imbalance", "Minimize false positives", "<100ms latency requirement"]
+      },
+      
+      technicalApproach: {
+        implementation: [
+          "Applied SMOTE (Synthetic Minority Over-sampling Technique) to balance training distributions",
+          "Evaluated Logistic Regression, Random Forest, and XGBoost models",
+          "Selected Logistic Regression for optimal balance of speed (45ms latency), interpretability, and 94% precision"
+        ]
+      },
+      
+      deployment: {
+        platform: "Flask REST API deployed on cloud infrastructure",
+        performance: "45ms average latency per transaction"
+      },
+      
+      results: {
+        quantitative: [
+          "94% precision and 89% recall on test dataset",
+          "0.96 AUC-ROC score demonstrating superior fraud discrimination",
+          "45ms average processing latency per query"
+        ]
+      },
+      
+      impact: "Demonstrated end-to-end ML engineering from imbalanced data handling to real-time REST API model deployment.",
+      
+      learnings: [
+        "Class imbalance requires SMOTE and precision/recall evaluation over raw accuracy metrics",
+        "Model decision thresholds can be tuned directly to align with business loss targets"
+      ],
+      
+      technologies: ["Python", "Scikit-learn", "SMOTE", "Pandas", "Flask", "REST API", "SQL"],
       github: "https://github.com/tanmaysadineni/portfolio",
       demo: "Available upon request"
     }
